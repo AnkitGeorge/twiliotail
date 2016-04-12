@@ -1,5 +1,15 @@
 == README
 
+This application was created to experiment with the twilio API in Rails.
+
+We (Stuart Seupaul and Ankit George), want to slowly build on SMS functionality.
+
+It begins with a text during account creation. Then, we proceed with other notifications.
+
+DB language - postgresql.
+
+----------------------------------------------------------------------------------------
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
