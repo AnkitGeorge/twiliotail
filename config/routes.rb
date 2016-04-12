@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'welcome#index'
+  post 'twilio/voice' => 'twilio#voice'
 
   resources :products
   resources :user_sessions
@@ -7,6 +8,8 @@ Rails.application.routes.draw do
 
   get 'login' => 'user_sessions#new', :as => :login
   post 'logout' => 'user_sessions#destroy', :as => :logout
+
+  get 'sendtext' => 'send_text#send_text_message', :as => :sendtext
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
